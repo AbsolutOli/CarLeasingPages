@@ -13,3 +13,62 @@ body {
     padding-left: 15px;
     margin: 0 auto;
 }
+
+
+.header {
+    padding: 40px 0;
+    background-color: #151515;
+
+    &__container {}
+
+    &__body {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 32px;
+
+        &_transp {}
+
+        @media (max-width: 620px) {
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+
+    &__logo {}
+
+    &__menu {}
+
+    &__list {
+        display: flex;
+        column-gap: 35px;
+        row-gap: 10px;
+
+        @media (max-width: 850px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 15px;
+        }
+
+        @media (max-width: 620px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 460px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    &__item {}
+
+    &__link {
+        font-weight: 700;
+        color: #FFF;
+        line-height: 1.2;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
