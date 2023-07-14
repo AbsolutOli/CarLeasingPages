@@ -1,0 +1,15 @@
+@import 'nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter';
+    color: #151515;
+    font-weight: 400;
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
