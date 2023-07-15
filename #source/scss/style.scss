@@ -5,19 +5,20 @@ body {
     font-family: 'Inter';
     color: #151515;
     font-weight: 400;
+    box-sizing: border-box;
 }
 
 [class*="__container"] {
     max-width: 1230px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 .wrapper {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: clip;
 }
 
 .main {
@@ -26,7 +27,9 @@ body {
 
 /*|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|*/
 .header {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     background-color: #151515;
 
     &__container {}
@@ -87,7 +90,8 @@ body {
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/
 .footer {
     background-color: #151515;
-    padding: 50px 0 32px 0;
+    padding-top: 50px;
+    padding-bottom: 32px;
 
     &__container {}
 
@@ -95,6 +99,14 @@ body {
         display: flex;
         justify-content: space-around;
         margin: 0 0 50px 0;
+
+        @media (max-width: 767.98px) {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(auto, 225px));
+            column-gap: 20px;
+            row-gap: 35px;
+            margin: 0 0 30px 0;
+        }
     }
 
     &__menu {}
@@ -104,6 +116,13 @@ body {
         justify-content: center;
         column-gap: 39px;
         margin: 0 0 50px 0;
+
+        @media (max-width: 675px) {
+            flex-direction: column;
+            row-gap: 15px;
+            align-items: center;
+            margin: 0 0 30px 0;
+        }
     }
 
     &__app-link {}
@@ -131,9 +150,20 @@ body {
     &__list {
         display: flex;
         column-gap: 40px;
+
+
+        @media (max-width: 675px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    &__item {}
+    &__item {
+        @media (max-width: 675px) {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
 
     &__link {
         color: #FFF;
@@ -141,11 +171,15 @@ body {
         &:hover {
             text-decoration: underline;
         }
+
+
     }
 }
 
 .menu-footer {
     max-width: 225px;
+
+    @media (max-width: 767.98px) {}
 
     &__label {
         color: #FFF;
@@ -153,6 +187,11 @@ body {
         font-weight: 700;
         line-height: 1.2;
         margin: 0 0 40px 0;
+
+        @media (max-width: 767.98px) {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
     }
 
     &__list {}
