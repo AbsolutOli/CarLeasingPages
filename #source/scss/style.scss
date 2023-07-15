@@ -32,6 +32,10 @@ body {
 
     background-color: #151515;
 
+    &_transp {
+        background-color: transparent;
+    }
+
     &__container {}
 
     &__body {
@@ -41,7 +45,7 @@ body {
         align-items: flex-end;
         gap: 32px;
 
-        &_transp {}
+
 
         @media (max-width: 620px) {
             align-items: flex-start;
