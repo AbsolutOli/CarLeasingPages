@@ -24,8 +24,11 @@ var swiperHandler = setInterval(function () {
         }
     })
     sliderImages[swiperFocus].classList.add('active');
+}, 10000);
 
-    // let numfoc = null;
+
+/*===Alternative auto swipe*===/
+// let numfoc = null;
     // let slfoc = null;
 
     // sliderButtons.forEach((button, index) => {
@@ -57,5 +60,3 @@ var swiperHandler = setInterval(function () {
     // btnfoc.classList.remove('active');
 
 
-
-}, 10000);
