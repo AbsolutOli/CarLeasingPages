@@ -47,6 +47,10 @@ body {
     font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
+
+    @media (max-width: 479.98px) {
+        font-size: 32px;
+    }
 }
 
 
@@ -259,6 +263,10 @@ body {
 .benefits {
     padding: 150px 0 75px 0;
 
+    @media (max-width: 479.98px) {
+        padding: 80px 0 40px 0;
+    }
+
     &__container {}
 
     &__title {
@@ -271,6 +279,10 @@ body {
         height: 100%;
         flex-wrap: wrap;
         justify-content: center;
+
+        @media (max-width: 479.98px) {
+            gap: 20px;
+        }
     }
 
     &__item {
@@ -279,6 +291,10 @@ body {
         align-items: center;
         gap: 30px;
         max-width: 270px;
+
+        @media (max-width: 479.98px) {
+            gap: 10px;
+        }
     }
 
     &__icon {
