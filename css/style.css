@@ -133,6 +133,13 @@ body {
      object-fit: cover;
 }
 
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 /*|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|*/
 .header {
   position: absolute;
@@ -360,6 +367,65 @@ body {
 .slider__button.active {
   background-color: #FFF;
   height: 6px;
+}
+
+/*|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|BENEFITS|*/
+.benefits {
+  padding: 150px 0 75px 0;
+}
+.benefits__title {
+  margin: 0 0 50px 0;
+}
+.benefits__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  max-width: 270px;
+}
+.benefits__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 1px solid #06F;
+  margin: 0 0;
+}
+.benefits__label {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.benefits__text {
+  text-align: left;
 }
 
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/
