@@ -28,6 +28,8 @@ body {
     &__top {}
 
     &__benefits {}
+
+    &__terms {}
 }
 
 .__ibg {
@@ -319,6 +321,83 @@ body {
         text-align: left;
     }
 }
+
+/*|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|TERMS|*/
+.terms {
+    padding: 75px 0 75px 0;
+
+    @media (max-width: 479.98px) {
+        padding: 40px 0 40px 0;
+    }
+
+    &__container {}
+
+    &__body {
+        max-width: 595px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0 0 50px 0;
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin: 0 0 50px 0;
+        }
+
+    }
+
+    &__list {
+        margin: 0 0 70px 0;
+    }
+}
+
+.list {
+    counter-reset: rulescount;
+
+    &__title {
+        margin: 0 0 50px 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        max-width: 270px;
+        height: 100px;
+        position: relative;
+
+        &::before {
+            counter-increment: rulescount;
+            content: counter(rulescount);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #06F;
+            left: -88.8888888889%;
+
+            color: #FFF;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+}
+
 
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/
 .footer {
