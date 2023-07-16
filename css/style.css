@@ -96,6 +96,7 @@ body {
   font-weight: 400;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #FFF;
 }
 
 [class*=__container] {
