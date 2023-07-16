@@ -215,6 +215,16 @@ body {
 .top__container {
   padding-top: 16.13%;
 }
+@media (max-width: 991.98px) {
+  .top__container {
+    padding-top: 50%;
+  }
+}
+@media (max-width: 479.98px) {
+  .top__container {
+    padding-top: 85%;
+  }
+}
 .top__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +247,23 @@ body {
   line-height: 1.2;
   margin-bottom: 38px;
 }
+@media (max-width: 991.98px) {
+  .top__title {
+    font-size: 68px;
+  }
+}
+@media (max-width: 767.98px) {
+  .top__title {
+    font-size: 46px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 479.98px) {
+  .top__title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
 .top__button {
   color: #FFF;
   font-size: 36px;
@@ -249,19 +276,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #151515;
   width: 430px;
   height: 90px;
-  border-radius: 3px;
-  padding: 0 15px;
+  border-radius: 5px;
+  padding: 10px 15px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .top__button:hover {
   background-color: #202020;
+}
+@media (max-width: 991.98px) {
+  .top__button {
+    width: 350px;
+  }
+}
+@media (max-width: 767.98px) {
+  .top__button {
+    width: 270px;
+    height: 60px;
+    font-size: 24px;
+  }
 }
 
 .slider {

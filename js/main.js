@@ -58,4 +58,4 @@ var swiperHandler = setInterval(function () {
 
 
 
-}, 5000);
+}, 10000);
