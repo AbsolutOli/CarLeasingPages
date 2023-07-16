@@ -115,9 +115,47 @@ body {
 .top {
     position: relative;
 
-    &__container {}
+    &__container {
+        padding-top: 16.13%;
+    }
 
     &__slider {}
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 38px;
+    }
+
+    &__button {
+        color: #FFF;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #151515;
+        width: 430px;
+        height: 90px;
+        border-radius: 3px;
+        padding: 0 15px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: #202020;
+        }
+    }
 }
 
 .slider {
@@ -126,7 +164,7 @@ body {
     padding-bottom: 6.858%;
 
     &__slides {
-        padding-bottom: 77.77%;
+        padding-bottom: 42.30%;
     }
 
     &__slide {

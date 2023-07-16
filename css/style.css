@@ -212,6 +212,58 @@ body {
 .top {
   position: relative;
 }
+.top__container {
+  padding-top: 16.13%;
+}
+.top__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top__title {
+  color: #FFF;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 38px;
+}
+.top__button {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #151515;
+  width: 430px;
+  height: 90px;
+  border-radius: 3px;
+  padding: 0 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.top__button:hover {
+  background-color: #202020;
+}
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +274,7 @@ body {
   padding-bottom: 6.858%;
 }
 .slider__slides {
-  padding-bottom: 77.77%;
+  padding-bottom: 42.3%;
 }
 .slider__slide {
   display: none;
