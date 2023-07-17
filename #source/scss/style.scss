@@ -516,9 +516,12 @@ body {
 
 
 /*|CONTACTUS|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|*/
-
 .contactus {
     padding: 240px 0 75px 0;
+
+    @media (max-width: 460px) {
+        padding: 300px 0 40px 0;
+    }
 
     &__container {}
 
@@ -533,6 +536,10 @@ body {
         font-weight: 700;
         line-height: 1.2;
         margin: 0 0 50px 0;
+
+        @media (max-width: 460px) {
+            font-size: 18px;
+        }
     }
 
     &__form {
@@ -543,10 +550,14 @@ body {
         flex-wrap: wrap;
         column-gap: 40px;
         row-gap: 50px;
+
+        @media (max-width: 650px) {
+            row-gap: 20px;
+        }
     }
 
     &__input {
-        min-width: 270px;
+        max-width: 270px;
         padding: 18px 20px;
         border: 1px solid #0066FF;
         transition: box-shadow 0.3s ease 0s;
@@ -563,6 +574,11 @@ body {
 
         &::placeholder {
             opacity: 0.5;
+        }
+
+        @media (max-width: 650px) {
+            flex: 1 1 100%;
+            max-width: none;
         }
     }
 
