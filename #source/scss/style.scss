@@ -32,6 +32,8 @@ body {
     &__terms {}
 
     &__welcome {}
+
+    &__important {}
 }
 
 .__ibg {
@@ -470,6 +472,44 @@ body {
     }
 }
 
+
+/*|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|IMPORTANT|*/
+.important {
+    padding: 75px 0 150px 0;
+
+    @media (max-width: 479.98px) {
+        padding: 40px 0 80px 0;
+    }
+
+    &__container {}
+
+    &__title {
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        max-width: 585px;
+        margin: 0 auto 50px auto;
+    }
+
+    &__items {
+        display: flex;
+        column-gap: 40px;
+        row-gap: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 270px;
+    }
+
+    &__image {
+        margin: 0 0 20px 0;
+    }
+
+    &__discribe {}
+}
 
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/
 .footer {
