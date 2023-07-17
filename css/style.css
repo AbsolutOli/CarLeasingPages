@@ -220,6 +220,9 @@ body {
 .header__link:hover {
   text-decoration: underline;
 }
+.header__link_active {
+  color: #0066FF;
+}
 
 /*|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|TOP|*/
 .top {
@@ -820,6 +823,7 @@ body {
   border-radius: 3px;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+  text-transform: uppercase;
 }
 .blog__button:hover {
   background-color: #242424;
@@ -899,7 +903,7 @@ body {
   }
 }
 .item-blog:hover {
-  background-color: #f1f1f1;
+  background-color: #eaeaea;
 }
 
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/

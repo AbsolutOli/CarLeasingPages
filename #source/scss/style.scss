@@ -133,6 +133,10 @@ body {
         &:hover {
             text-decoration: underline;
         }
+
+        &_active {
+            color: #0066FF;
+        }
     }
 }
 
@@ -663,6 +667,7 @@ body {
         color: #FFF;
         border-radius: 3px;
         transition: background-color 0.3s ease 0s;
+        text-transform: uppercase;
 
         &:hover {
             background-color: #242424;
@@ -733,10 +738,9 @@ body {
     transition: background-color 0.3s ease 0s;
 
     &:hover {
-        background-color: #f1f1f1;
+        background-color: #eaeaea;
     }
 }
-
 
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/
 .footer {
