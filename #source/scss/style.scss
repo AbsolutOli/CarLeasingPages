@@ -37,6 +37,8 @@ body {
 
 
     &__contactus {}
+
+    &__blog {}
 }
 
 .__ibg {
@@ -624,6 +626,87 @@ body {
         }
     }
 }
+
+/*|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|BLOG|*/
+.blog {
+    padding: 75px 0 150px 0;
+
+    @media (max-width: 460px) {
+        padding: 40px 0 80px 0;
+    }
+
+    &__container {}
+
+    &__items {
+        display: flex;
+        column-gap: 40px;
+        margin: 0 0 70px 0;
+    }
+
+    &__item {}
+
+    &__button {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 220px;
+        padding: 13px 15px;
+        background-color: #151515;
+        color: #FFF;
+        border-radius: 3px;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+            background-color: #242424;
+        }
+    }
+}
+
+.item-blog {
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__image {
+        display: inline-block;
+        margin: 0 0 30px 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        color: #151515;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &__button {
+        display: flex;
+        padding: 4px 10px;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        background-color: #0066FF;
+        color: #FFFFFF;
+        border-radius: 3px;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+            background-color: #287eff;
+        }
+    }
+
+    transition: background-color 0.3s ease 0s;
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+}
+
 
 /*|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|FOOTER|*/
 .footer {
