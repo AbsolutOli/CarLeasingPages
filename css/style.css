@@ -574,6 +574,7 @@ body {
 }
 .welcome__title {
   margin: 0 0 20px 0;
+  text-transform: uppercase;
 }
 .welcome__subtitle {
   text-align: center;
