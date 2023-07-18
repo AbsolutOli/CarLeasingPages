@@ -27,36 +27,34 @@ var swiperHandler = setInterval(function () {
 }, 10000);
 
 
-/*===Alternative auto swipe*===/
+/*===Alternative auto swipe===*/
 // let numfoc = null;
-    // let slfoc = null;
+// let slfoc = null;
 
-    // sliderButtons.forEach((button, index) => {
-    //     if (button.classList.contains('active')) {
-    //         slfoc = button;
-    //         if (index < 3) {
-    //             numfoc = index + 1;
-    //         } else {
-    //             numfoc = 0;
-    //         }
+// sliderButtons.forEach((button, index) => {
+//     if (button.classList.contains('active')) {
+//         slfoc = button;
+//         if (index < 3) {
+//             numfoc = index + 1;
+//         } else {
+//             numfoc = 0;
+//         }
 
-    //         console.log(numfoc);
-    //         console.log(slfoc);
-    //     }
-    // })
+//         console.log(numfoc);
+//         console.log(slfoc);
+//     }
+// })
 
-    // sliderButtons[numfoc].classList.add('active');
-    // slfoc.classList.remove('active');
-
-
-    // let btnfoc = null;
-    // sliderImages.forEach((images, index) => {
-    //     if (images.classList.contains('active')) {
-    //         btnfoc = images;
-    //     }
-    // })
-
-    // sliderImages[numfoc].classList.add('active');
-    // btnfoc.classList.remove('active');
+// sliderButtons[numfoc].classList.add('active');
+// slfoc.classList.remove('active');
 
 
+// let btnfoc = null;
+// sliderImages.forEach((images, index) => {
+//     if (images.classList.contains('active')) {
+//         btnfoc = images;
+//     }
+// })
+
+// sliderImages[numfoc].classList.add('active');
+// btnfoc.classList.remove('active');
